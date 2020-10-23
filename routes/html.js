@@ -1,4 +1,7 @@
-let path = require("path");
+const savedNote = require("../db/db.json");
+const express = require("express");
+const path = require("path");
+const fs = require('fs');
 
 
 
@@ -12,4 +15,6 @@ app.get("/notes", function (req, res) {
 app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
 });
-}   
+  
+
+}
