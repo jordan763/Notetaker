@@ -14,6 +14,5 @@ require("./routes/api")(app);
 require("./routes/html")(app);
 
 app.listen(PORT, function() {
-    console.log(savedNote)
     console.log("App listening on PORT: " + PORT);
   });
